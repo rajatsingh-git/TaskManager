@@ -1,0 +1,526 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+/* background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg'); */
+background-size: cover;
+background-color:rgb(34, 32, 32) ;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: auto;
+margin-top: 150px;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+
+}
+.empDashboard{
+  margin: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom:0;
+  background-color: rgb(34, 32, 32);
+}
+.greeting {
+  color: white;
+  font-size: 22px;
+  
+  font-weight: 500;
+}
+
+.username-container {
+  font-size: 34px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  
+}
+
+.logout-button {
+  color: white;
+  background-color: rgb(172, 45, 45);
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-left: auto;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout-button:hover {
+  background-color: rgb(156, 43, 43);
+  transform: scale(1.05);
+}
+
+.logout-button:active {
+  transform: scale(0.95);
+}
+
+.tasklistContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start; /* Ensures proper left alignment */
+  align-items: center;
+  /* padding: 20px; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents items from wrapping */
+  scrollbar-width: thin; /* Firefox custom scrollbar */
+  scrollbar-color: #888 #222; /* Thumb & track colors */
+}
+
+/* WebKit (Chrome, Safari, Edge) Custom Scrollbar */
+.tasklistContainer::-webkit-scrollbar {
+  height: 8px; /* Set horizontal scrollbar height */
+}
+
+.tasklistContainer::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light gray track */
+  border-radius: 10px;
+}
+
+.tasklistContainer::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.tasklistContainer::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+
+/* Optimized Task Headers */
+.tasklistHeader {
+  border-radius: 8px;
+  color: #333;
+  padding: 0;
+  min-width: 250px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.tasklistHeader:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Background Colors */
+.tasklistHeader1 { background: lightsalmon;padding: 10px; border-radius: 10px; width: 50%;}
+.tasklistHeader2 { background: lightcoral; padding: 10px; border-radius: 10px;width: 50%;}
+.tasklistHeader3 { background: lightgreen;padding: 10px; border-radius: 10px; width: 50%;}
+.tasklistHeader4 { background: lightyellow;padding: 10px; border-radius: 10px;width: 50%; }
+
+
+/* Task List Container */
+.taskListContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start; /* Align items from the left */
+  align-items: center;
+  
+  margin-top: 30px;
+  background-color: rgb(34, 32, 32);
+  height: 300px;
+  
+
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents items from wrapping */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #222; /* Custom scrollbar colors */
+}
+.taskP{
+  color: white;
+}
+.taskTablehead{
+  background-color: #691111;
+  
+}
+.taskDashboard{
+  margin: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom:5%;
+  background-color: rgb(34, 32, 32);
+}
+.taskTable {
+  width: 100%;
+  border-collapse: separate; /* Allows border-radius to work */
+  border-spacing: 0; /* Ensures no unwanted gaps */
+  margin: 2px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.taskTable th {
+  background-color: #4CAF50; /* Green background for headers */
+  color: white;
+  padding: 10px;
+}
+
+.taskTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.taskTable tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.taskTable td, .taskTable th {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* .taskTable thead th {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+} */
+
+.taskTable tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.taskTable tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+
+
+
+
+/* Custom scrollbar styling for WebKit browsers (Chrome, Edge, Safari) */
+.taskListContainer::-webkit-scrollbar {
+  height: 8px; /* Adjust scrollbar height */
+}
+
+.taskListContainer::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.taskListContainer::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker on hover */
+}
+
+/* Task Headers (Optimized by Using a Common Class) */
+.taskHeader {
+  border-radius: 8px;
+  color: #333; /* Darker text for better readability */
+  padding: 10px; /* More padding for a cleaner look */
+  max-width: 250px; /* Fixed width instead of percentage */
+  min-height: 100px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.taskHeader:hover {
+  transform: translateY(-5px); /* Hover effect for better UI */
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific Background Colors for Task Headers */
+/* Task Headers with Fixed Size */
+.taskHeader1 { background: lightyellow; padding: 10px; border-radius: 10px;min-width: 400px; width: 400px; height: 100%;overflow: hidden; }
+.taskHeader2 { background: skyblue; padding: 10px; border-radius: 10px; min-width: 400px;width: 400px; height: 100%; overflow: hidden;word-wrap: break-word;}
+.taskHeader3 { background: lightgoldenrodyellow; padding: 10px; border-radius: 10px;min-width: 400px; width: 400px; height: 100%; overflow: hidden;word-wrap: break-word;}
+.taskHeader4 { background: lightgreen; padding: 10px; border-radius: 10px; min-width: 400px;width: 400px; height: 100%; overflow: hidden;word-wrap: break-word;}
+
+.deatils4 {
+  height: auto; /* Adjusts height dynamically */
+  overflow-y: auto; /* Scroll only if needed */
+  word-break: break-word; /* Ensures long words wrap */
+  white-space: normal; /* Ensures multi-line text */
+  padding: 10px;
+}
+/* Task List Detail */
+.tasklistdetail1 {
+  display: flex;
+  align-items: center; /* Align items properly */
+  gap: 10px; /* Adds spacing between elements */
+}
+
+/* Task Update Button */
+.taskupdate {
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.taskupdate:hover {
+  background-color: darkred; /* Darker red on hover */
+}
+
+.failedTaskBtn{
+  background-color: red;
+  color: wheat;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+.completeTaskBtn{
+  border-radius: 8px;
+  background-color: green;
+  color: wheat;
+}
+
+
+/* Date Styling */
+.date {
+  margin-left: 10%; /* Moves it to the right in flex container */
+  font-weight: bold;
+  color: black;
+  text-align: right;
+}
+
+/* Admin Dashboard Form */
+.adminDashBoardform {
+  padding: 3%;
+  background-color: #333;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Main Input Section */
+.adminDashboardMain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* Limits width on large screens */
+}
+
+/* Title Styling */
+.adminDashboardMainTitle {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Input Fields */
+.adminDashboardMainContent {
+  margin-bottom: 15px;
+}
+
+.inputdesign {
+  height: 40px;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 300px; /* Restricts width on larger screens */
+  background-color: #444;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+/* Description Container */
+.adminDashboardDescriptionContainer {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Description Box */
+.inputdesignDescription {
+  width: 100%;
+  height: 150px;
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  resize: none;
+  flex-wrap: wrap;
+  display: flex;
+}
+.adminDashboardAddTaskButton{
+  background-color: rgb(44, 149, 44);
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20PX;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+ 
+  
+  
+}
+.alltaskbox {
+  background-color: #444;
+  border-radius: 10px;
+  padding: 6px;
+  height: 200px;
+  overflow-y: auto; /* Enables vertical scrolling */
+  scroll-behavior: smooth;
+  
+  /* Custom Scrollbar Styling */
+  scrollbar-width: thin; /* Works in Firefox */
+  scrollbar-color: #666 #333; /* Thumb and track colors */
+}
+
+/* WebKit-based browsers (Chrome, Edge, Safari) */
+.alltaskbox::-webkit-scrollbar {
+  width: 8px; /* Thin scrollbar */
+}
+
+.alltaskbox::-webkit-scrollbar-thumb {
+  background: #666; /* Scrollbar thumb color */
+  border-radius: 5px;
+}
+
+.alltaskbox::-webkit-scrollbar-track {
+  background: #333; /* Scrollbar track color */
+  border-radius: 5px;
+}
+
+
+.taskbox {
+  background-color: lightgoldenrodyellow;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between; /* Space between child elements */
+  align-items: center; /* Centers items vertically */
+  gap: 10px; /* Adds spacing between items */
+  border-radius: 5px; /* Rounded corners */
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .adminDashBoardform {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adminDashboardMain {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .inputdesign {
+    max-width: 100%;
+  }
+
+  .adminDashboardDescriptionContainer {
+    width: 100%;
+    min-width: unset;
+    text-align: center;
+  }
+
+  .inputdesignDescription {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
